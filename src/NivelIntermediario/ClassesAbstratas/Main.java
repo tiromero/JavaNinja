@@ -18,6 +18,9 @@ public class Main {
         *
         * Classes que pegam heranças de classes abstratas como a Hokages,
         * são OBRIGADAS a colocar o metodo abstrato que tem na classe
+        *
+        * Classes abstratas e interfaces nao podem criar objetos
+        * só classes comuns criam objetos
         * */
 
     }
