@@ -2,14 +2,15 @@ package desafios.DesafioDia1;
 
 import desafios.DesafioDia1.RankNinja;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        Ninjas[] listaNinjas = new Ninjas[10];
-        int contador = 0;
+        List <Ninjas> ninjasList = new ArrayList<>();
 
         while (true) {
             //Criar menu e opções
@@ -26,10 +27,6 @@ public class Main {
 
             switch (input2) {
                 case 1:
-                    if(contador >= listaNinjas.length) {
-                        System.out.println("Lista de ninjas cheia!\n");
-                        break;
-                    }
                     System.out.println("====== Criar Ninja ======");
                     Ninjas novonninja = new Ninjas();
                     System.out.println("Nome do Ninja: ");
@@ -54,20 +51,19 @@ public class Main {
                     novonninja.setRank(rank);
                     input.nextLine();
                     System.out.println("Ninja Cadastrado com sucesso!\n");
-                    listaNinjas[contador] = novonninja;
-                    contador++;
+                    ninjasList.add(novonninja);
                     break;
                 case 2:
                     System.out.println("====== Ver Lista de Ninjas ======");
-                    if(contador == 0){
+                    if(ninjasList.isEmpty()){
                         System.out.println("Nenhum ninja cadastrado no momento!\n");
                     } else {
-                        for(int i = 0; i < contador; i++){
+                        for(int i = 0; i < ninjasList.size(); i++){
                             System.out.println("------------------- \n");
-                            System.out.println("Nome do Ninja: " + listaNinjas[i].getNome());
-                            System.out.println("Idade do Ninja: " + listaNinjas[i].getIdade());
-                            System.out.println("Aldeia do Ninja:" + listaNinjas[i].getAldeia());
-                            System.out.println("Rank Identificado: " + listaNinjas[i].getRank());
+                            System.out.println("Nome do Ninja: " + ninjasList.get(i).getNome());
+                            System.out.println("Idade do Ninja: " + ninjasList.get(i).getIdade());
+                            System.out.println("Aldeia do Ninja:" + ninjasList.get(i).getAldeia());
+                            System.out.println("Rank Identificado: " + ninjasList.get(i).getRank());
                             System.out.println("------------------- \n");
                         }
                     }
