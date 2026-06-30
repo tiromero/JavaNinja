@@ -7,13 +7,13 @@ import java.util.Scanner;
 public class Ninjas {
     private String nome;
     private int idade;
-    private String Aldeia;
+    private String aldeia;
     private RankNinja rank;
 
     public Ninjas(String nome, int idade, String aldeia, RankNinja rank) {
         this.nome = nome;
         this.idade = idade;
-        Aldeia = aldeia;
+        this.aldeia = aldeia;
         this.rank = rank;
     }
 
@@ -38,11 +38,11 @@ public class Ninjas {
     }
 
     public String getAldeia() {
-        return Aldeia;
+        return aldeia;
     }
 
     public void setAldeia(String aldeia) {
-        Aldeia = aldeia;
+        this.aldeia = aldeia;
     }
 
     public RankNinja getRank() {

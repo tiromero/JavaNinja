@@ -51,6 +51,25 @@ Depois de cada desafio, registre um check-in com:
 
 ## Check-ins
 
+### Check-in - 2024-05-21
+
+#### Desafio feito
+*   Estudo e prática dos métodos básicos de `ArrayList` (`add`, `remove`, `set`, `size`) em `NivelIntermediario/ArrayList/Main.java`.
+
+#### Onde travei
+*   A dificuldade não foi no `ArrayList` em si, mas na manipulação de arrays com laços `for`, que é um ponto de confusão recorrente.
+
+#### O que aprendi
+*   A diferença prática entre `Array` (tamanho estático) e `List` (tamanho dinâmico).
+*   A conveniência do `ArrayList` para adicionar e remover elementos sem gerenciamento manual de tamanho.
+
+#### O que preciso revisar
+*   Praticar o uso de laços (`for`, `for-each`) para percorrer e manipular elementos em `Arrays` e `ArrayLists`.
+*   Revisão geral dos conceitos de POO vistos até o momento para fortalecer a mentalidade de programador.
+
+#### Proximo desafio recomendado
+*   **Refatorar o `DesafioDia1` (Cadastro de Ninjas):** Substituir o `Ninjas[]` (array estático) por um `ArrayList<Ninjas>`. Isso eliminará o limite de 10 ninjas e permitirá a prática de manipulação de listas com objetos complexos.
+
 ### Check-in - 2026-06-15
 
 #### Desafio feito
